@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E56FD891-2888-472C-9E3B-5E2D1D386177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Horoscope</RootNamespace>
+    <AssemblyName>Horoscope</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\DateSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DateSign.Designer.cs">
+      <DependentUpon>DateSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignAquarius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignAquarius.Designer.cs">
+      <DependentUpon>SignAquarius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignCapricorn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignCapricorn.Designer.cs">
+      <DependentUpon>SignCapricorn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignPisces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignPisces.Designer.cs">
+      <DependentUpon>SignPisces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignSagittarius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignSagittarius.Designer.cs">
+      <DependentUpon>SignSagittarius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign.Designer.cs">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignAries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignAries.Designer.cs">
+      <DependentUpon>SignAries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignCancer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignCancer.Designer.cs">
+      <DependentUpon>SignCancer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignLeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignLeo.Designer.cs">
+      <DependentUpon>SignLeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignMaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignMaid.Designer.cs">
+      <DependentUpon>SignMaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignScales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignScales.Designer.cs">
+      <DependentUpon>SignScales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignScorpio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignScorpio.Designer.cs">
+      <DependentUpon>SignScorpio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignTaurus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignTaurus.Designer.cs">
+      <DependentUpon>SignTaurus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignTwins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignTwins.Designer.cs">
+      <DependentUpon>SignTwins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\DateSign.resx">
+      <DependentUpon>DateSign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignAquarius.resx">
+      <DependentUpon>SignAquarius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignAries.resx">
+      <DependentUpon>SignAries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignCancer.resx">
+      <DependentUpon>SignCancer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignCapricorn.resx">
+      <DependentUpon>SignCapricorn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignLeo.resx">
+      <DependentUpon>SignLeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignMaid.resx">
+      <DependentUpon>SignMaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignPisces.resx">
+      <DependentUpon>SignPisces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignSagittarius.resx">
+      <DependentUpon>SignSagittarius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignScales.resx">
+      <DependentUpon>SignScales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignScorpio.resx">
+      <DependentUpon>SignScorpio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignTaurus.resx">
+      <DependentUpon>SignTaurus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignTwins.resx">
+      <DependentUpon>SignTwins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign.resx">
+      <DependentUpon>Sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1030161911_56_0_1865_1357_1920x0_80_0_0_b574d72a4d24a528fef7efa32800309f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e55f5afb6bba17134d8ae7faa536694c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1f42d5629a85a6c61d5948e937dda876.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8c3df51060d4143c4cb22ac5103452581a0dde29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scale_1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scale_1200 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m1000x1000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e55f5afb6bba17134d8ae7faa536694c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3d90f4df32374054c13c2f0bcb20f29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1030161911_56_0_1865_1357_1920x0_80_0_0_b574d72a4d24a528fef7efa32800309f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0de08cd6c3918056bd25cf20342b59f4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018-05-04_12-56-09__5f1621d6-4f81-11e8-a466-002590aa0fe7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01fad37a2be49cd9db6c95726c825407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-2-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opera-snimok_2022-10-17_211922_tvcenter.ru_.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
